@@ -1,0 +1,623 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Samsung Sharp Sans';
+  src: local('Samsung Sharp Sans'), local('SamsungSharpSans'),
+      url('fonts/SamsungSharpSans.woff2') format('woff2'),
+      url('fonts/SamsungSharpSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Samsung Sharp Sans';
+  src: local('Samsung Sharp Sans Bold'), local('SamsungSharpSans-Bold'),
+      url('fonts/SamsungSharpSans-Bold.woff2') format('woff2'),
+      url('fonts/SamsungSharpSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Samsung Sharp Sans';
+  src: local('Samsung Sharp Sans Medium'), local('SamsungSharpSans-Medium'),
+      url('fonts/SamsungSharpSans-Medium.woff2') format('woff2'),
+      url('fonts/SamsungSharpSans-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Black'), local('Aeonik-Black'),
+      url('fonts/Aeonik-Black.woff2') format('woff2'),
+      url('fonts/Aeonik-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Black Italic'), local('Aeonik-BlackItalic'),
+      url('fonts/Aeonik-BlackItalic.woff2') format('woff2'),
+      url('fonts/Aeonik-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Light'), local('Aeonik-Light'),
+      url('fonts/Aeonik-Light.woff2') format('woff2'),
+      url('fonts/Aeonik-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Bold'), local('Aeonik-Bold'),
+      url('fonts/Aeonik-Bold.woff2') format('woff2'),
+      url('fonts/Aeonik-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Medium'), local('Aeonik-Medium'),
+      url('fonts/Aeonik-Medium.woff2') format('woff2'),
+      url('fonts/Aeonik-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Bold Italic'), local('Aeonik-BoldItalic'),
+      url('fonts/Aeonik-BoldItalic.woff2') format('woff2'),
+      url('fonts/Aeonik-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Light Italic'), local('Aeonik-LightItalic'),
+      url('fonts/Aeonik-LightItalic.woff2') format('woff2'),
+      url('fonts/Aeonik-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Regular'), local('Aeonik-Regular'),
+      url('fonts/Aeonik-Regular.woff2') format('woff2'),
+      url('fonts/Aeonik-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Regular Italic'), local('Aeonik-RegularItalic'),
+      url('fonts/Aeonik-RegularItalic.woff2') format('woff2'),
+      url('fonts/Aeonik-RegularItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Thin'), local('Aeonik-Thin'),
+      url('fonts/Aeonik-Thin.woff2') format('woff2'),
+      url('fonts/Aeonik-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Medium Italic'), local('Aeonik-MediumItalic'),
+      url('fonts/Aeonik-MediumItalic.woff2') format('woff2'),
+      url('fonts/Aeonik-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Aeonik';
+  src: local('Aeonik Thin Italic'), local('Aeonik-ThinItalic'),
+      url('fonts/Aeonik-ThinItalic.woff2') format('woff2'),
+      url('fonts/Aeonik-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+body{
+    margin:0;
+    font-family:'Aeonik';
+    font-weight: normal;
+}
+p{
+  font-size: 12px;
+  color:#666666;
+  transition-duration: 3s;
+}
+h3{
+  color:#212121;
+  font-weight:normal;
+  transition-duration: 3s;
+}
+/*header-section*/
+header{
+    background-color:#ecf2f6;
+}
+.container{
+    width: 1024px;
+    margin:auto;
+    overflow:hidden;
+}
+/*navbar*/
+.navbar{
+  padding-top:30px;
+}
+/*navbar-brand*/
+.navbar-brand{
+    text-decoration:none;
+    font-size: 30px;
+    font-weight: bold;
+    color:#1f2e50;
+    width: 30%;
+    display: inline-block;
+    font-family: 'Samsung Sharp Sans';
+    font-weight:bold;
+}
+/*navbar-brand ends*/
+/*navbar-right*/
+.navbar-right{
+    width: 70%;
+    float:right;
+}
+/*list*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 16px;
+  }
+  
+  li {
+    float: left;
+  }
+  .navbar-right li{
+    padding-left:60px;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }  
+  .navbar-right a{
+    padding:14px 0px;
+  }
+  .active{
+    position:relative;
+  }
+  .navbar-right a:hover.active::before{
+    content:" ";
+    position:absolute;
+    width:26px;
+    height:2px;
+    bottom:7px;
+    background: #acb5c2;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+ .dropdown-content a:hover {
+   background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /*list ends*/
+  /*navbar ends*/
+  /*container second*/
+  .container.secondc {
+    padding: 100px 0;
+}
+.second .left p{
+  font-size:16px;
+}
+/*left side*/
+.left{
+  width:44%;
+  float:left;
+  margin-top: -14px;
+}
+h4{
+  color:#364360;
+}
+h1 {
+  font-size: 52px;
+  margin: 23px 0;
+  color: #212121;
+  font-family: 'Samsung Sharp Sans';
+  font-weight: bold;  
+}
+.left p{
+  font-size:15px;
+}
+p.top{
+  font-size: 15px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+button{
+  padding: 12px 44px;
+  font-size: 14px;
+  color: white;
+  border:none;
+  border-radius: 10px;
+  background-color: #438dcc;
+}
+/*right side*/
+.right{
+  width:56%;
+  float:right;
+  margin-top: -31px;
+}
+.right img{
+  width: 459px;
+  margin-left: 84px;
+}
+  /*conainer second ends*/
+  /*header-section ends*/
+  /*first section*/
+  section{
+    padding: 100px 0;
+  }
+  .first{
+    background-color:#f4f7fa;
+  }
+  h2{
+    padding-bottom:40px;
+    font-size: 35px;
+    color:#1f2e50;
+    margin-top: 0;
+  }
+  .first-content-wrapper{
+    margin:0 -10px;
+    overflow:hidden;
+  }
+  .first-content{
+   width:20%;
+   padding:0 10px;
+   float:left;
+  }
+  .cards{
+    background-color:#ffffff;
+    padding: 17px 26px;
+    border-radius: 15px; 
+    color:#21212a;
+    transition-duration: 3s;
+  }
+  .img-holder {
+    width: 53px;
+    height: 53px;
+    line-height:73px;
+    background: #f4f7fa;
+    text-align: center;
+    border-radius: 50%;
+  }
+  a{
+    text-decoration:none;
+  }
+  .cards:hover{
+    background-color: #438dcc;
+  }
+  .cards:hover h3, .cards:hover p{
+    color:white;
+  }
+  .first img.rightarr{
+    float:right;
+    width:4%;
+  }
+  /*first section ends*/
+  /*second section*/
+  .second{
+    background: linear-gradient(to right, 
+    #4490cc 0%, #5bc0d4 100%);
+  }
+  .wrapper{
+    width:56%;
+    float:left;
+    color:white;
+  }
+  .wrapper h2{
+    padding-bottom:12px;
+    color:white;
+    padding-right:26px;
+    margin-bottom: 0;
+  }
+  .wrapper p{
+    margin-bottom: 30px;
+    color:white;
+    font-size: 16px;
+  }
+  button2{
+    padding: 12px 44px;
+    font-size: 14px;
+    border-radius: 10px;
+    border:1px solid #b2d7ea;
+    float:left;
+    margin-right:10px;
+  }
+  /*second section ends*/
+  /*third section*/
+  .third{
+    background-color:#ecf2f6;
+  }
+  .third h2{
+    text-align:center;
+  }
+  .second-content-wrapper{
+    padding:0 70px;
+  }
+  .second-content{
+    width:25%;
+    padding:0 15px;
+    float:left;
+  }
+  .banner{
+     margin-bottom:30px;
+     height:137px;
+     padding-top:5px;
+   }
+   .banner p{
+    font-size: 14px;
+   }
+   .banner img{
+     margin-top:-6px;
+   }
+   .banner img.b1{
+     margin-right:32px;
+   }
+  /*third section ends*/
+  /*fourth section*/
+  .fourth{
+    position:relative;
+  }
+  .fourth h2{
+    width:25%;
+    margin-top:0;
+    float:left;
+    color:white;
+  }
+  p.headline{
+    width:75%;
+    float:left;
+    margin-top:0;
+    color:white;
+    font-size: 21px;
+    padding-left: 31px;
+    line-height: 47px;
+}
+  .fourth-content-wrapper {
+    display: block;
+    clear: both;
+    margin: 0 -15px;
+    overflow: hidden;
+    padding:0 100px;
+  }
+  .fourth-content {
+    width: 33.33%;
+    float: left;
+    padding: 0 15px;
+  }
+  .imgholder2 img {
+    width: 100%;
+  }  
+  .fourth-content .content {
+    background:#f4f7fa;
+    margin: -4px 0 0 auto;
+    padding: 15px;
+  }
+  
+  .fourth:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 57.90%;
+    left: 0;
+    width:100%;
+    background: linear-gradient(to right, #4490cc 0%, #5bc0d4 100%);
+    z-index: -1;
+  }
+  /*fourth section ends*/
+  
+  /*fifth section*/
+  .fifthc{
+    margin-top: -174px;
+  }
+  .fifth{
+    background-color:#f4f7fa;
+  }
+  .fifth h1{
+    color:#ecf2f6;
+    font-size: 78px;
+    text-align: center;  
+    margin-bottom:50px;
+  }
+  .fifth h2{
+    margin-top:0;
+  }
+  .fifth-content-wrapper{
+    margin:0 -15px;
+  }
+  .fifth-content{
+    float:left;
+    width:33.33%;
+    padding:0 15px;
+  }
+  .content5{
+    background-color:white;
+    border-top-left-radius: 7%;
+    border-top-right-radius:7%;
+  }
+  h5{
+    color:#372e50;
+    font-size:12px;
+  }
+  .fifthimage{
+    width:100%;
+    border-top-left-radius: 7%;
+    border-top-right-radius:7%;
+  }
+  .post{
+    padding:10px 30px;
+  }
+  .post h5{
+    color:#1F2E50;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .post p{
+    font-size:15px;
+    color:#666678;
+  }
+  .post img{
+    width:22px;
+    margin-bottom: -6px;
+    margin-left:5px;
+  }
+  /*fifth section ends*/
+  /*seven section*/
+  .seven{
+    background-color: #f4f7fa;
+  }
+  .seven h3{
+    display:inline-block;
+  }
+  .seven img{
+    float:right;
+  }
+  .seventh-content-wrapper{
+    margin:0 -10px;
+  }
+  .seventh-content{
+    width:33.33%;
+    padding:0 10px;
+    float:left;
+  }
+  .seventh-content .content7{
+    padding: 17px 37px 38px;
+    background-color:white;
+  }
+  /*seven section ends*/
+  /*footer section*/
+  .footer{
+    background-color:#1f2e50;
+  }
+  .container.last{
+    width:1140px;
+  }
+  /*footer top*/
+  .footer-top{
+    overflow:hidden;
+    border-bottom: 1px solid #b3b7bd;
+    padding-bottom: 85px;
+  }
+  .smallfooter{
+    float:left;
+    width:20%;
+    padding-top:5px;
+  }
+  .smallfooter h3{
+    color:white;
+    margin-top:0;
+    margin-bottom: 42px;
+  }
+  h3.brand{
+    font-size: 30px;
+    font-weight: bold;
+    line-height:22px;
+  }
+  .smallfooter ul{
+    color:#b3b7bd;
+    font-size:14px;
+    float:none;
+  }
+  .smallfooter ul li{
+    margin-bottom:10px;
+    float:none;
+  }
+  /*footer-top ends*/
+  /*footer-bottom*/
+  .footer-bottom{
+    color:white;
+    margin:25px -15px 0 -15px;
+
+  }
+  .endfooter{
+    float:left;
+    width:33.33%;
+    padding:0 15px;
+    font-size:15px;
+  }
+  .endfooter ul{
+    font-size:15px;
+  }
+  .endfooter ul.last-list{
+    padding-left: 236.2px;
+  }
+  .endfooter li{
+    padding:0 10px;
+  }
+  .middle li{
+    border-right:2px solid white;
+  }
+  .middle li:last-child{
+    border:none;
+  }
+  li.lasticon{
+    padding-right:0;
+  }
+  /*footer-bottom ends*/
+  /*footer section ends*/
+ 

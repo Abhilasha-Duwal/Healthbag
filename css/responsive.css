@@ -1,0 +1,130 @@
+img{
+	width: 100%;
+}
+@media screen and (max-width: 1199px){
+
+}
+@media screen and (max-width: 1024px){
+}
+@media screen and (max-width: 995px){
+	.header-bottom .col-sm-8{
+		float:none;
+		width:100%;
+
+	}
+	.header-bottom .col-sm-8{
+		width:100%;
+		text-align: center;
+	}
+	.header-bottom .date{
+		float:none;
+	}
+	.header-bottom .col-sm-4{
+		width:100%;
+		text-align: center;
+	}
+	.header-bottom .social-sites{
+		float:none;
+	}
+	.handburger-icon {
+		display: block;
+	}
+	.dropdown-item{
+		display: none;
+	}
+	.site-nav.active .dropdown-item{
+		display: block;
+	}
+	.site-nav ul li{
+		display:block;
+		padding: 0;
+	}
+	.site-nav ul:first-child > li:after{
+		content: '';
+	}
+	.banner-aside{
+		padding-top: 15px;
+	}
+	.popular-section .main-item.type-2{
+		margin-left:0;
+	}
+	.popular-section .main-item.type-2{
+		padding-top: 35px;
+	}
+	.home-main-content .aside-item.type-1{
+		padding-top:35px;
+	}
+	.full-width-sec .main-title.type-2{
+		padding-top: 35px;
+	}
+	.full-width-sec .main-title.type-3{
+		padding-top: 35px;
+	}
+	.full-width-sec .main-title.type-4{
+		padding-top: 35px;
+	}
+	/*trek-section*/
+	.treks-section .main-item.type-3{
+		padding-top:35px;
+	}
+	/*video*/
+	.video .main-item.type-3 li{
+		margin-left:0;
+	}
+}
+@media screen and (max-width: 991px) {
+	.site-nav ul li{
+		display:block;
+		padding: 0;
+	}
+
+}
+@media screen and (max-width: 767px) {
+	.handburger-icon {
+		display: block;
+	}
+	.dropdown-item{
+		display: none;
+	}
+	.site-nav.active .dropdown-item{
+		display: block;
+	}
+	.site-nav ul li{
+	display:block;
+	padding: 0;
+	}
+	.site-nav ul:first-child > li:after{
+	content: '';
+	}
+	.banner-aside{
+		padding-top: 15px;
+	}
+	.popular-section .main-item.type-2{
+		margin-left:0;
+	}
+	.home-main-content .aside-item.type-1{
+		padding-top:35px;
+	}
+	.full-width-sec .main-title.type-2{
+		padding-top: 35px;
+	}
+	.full-width-sec .main-title.type-3{
+		padding-top: 35px;
+	}
+	.full-width-sec .main-title.type-4{
+		padding-top: 35px;
+	}
+	/*post-gallery*/
+	.post-gallery .img-holder{
+		margin-right: 10px;
+	}
+}
+
+@media screen and (max-width: 713px){
+}
+@media screen and (max-width: 619px){
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 557px){
+}
